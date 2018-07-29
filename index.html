@@ -3,8 +3,7 @@
 
 <head>
     <title>Varun Singhal</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -14,7 +13,6 @@
         crossorigin="anonymous"></script>
     <style>
         body {
-            font-size: 0.8em;
             font-family: 'Raleway', sans-serif;
         }
 
@@ -45,7 +43,7 @@
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
-
+                console.log(this.hash);
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
@@ -98,9 +96,14 @@
     <!-- menu ends -->
 
 
-
+    <br/>
+    <br/>
     <!-- flex -->
+    <div id="home">
+
+    </div>
     <!-- flex ends -->
+
     <br/>
     <br/>
     <!-- quote -->
@@ -114,26 +117,26 @@
     </div>
 
     <!-- quote ends -->
+    
     <br/>
     <br/>
-
     <!-- contact me -->
     <div class="container" id="contact">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-lg">
                 <h4>GET IN TOUCH</h4>
 
                 <p>Montreal, QC, Canada</p>
                 <p>varunsinghal15@gmail.com</p>
                 <p>123-456-7890</p>
             </div>
-            <div class="col-sm">
+            <div class="col-lg">
                 <form action="https://formspree.io/varunsinghal15@gmail.com" method="POST">
                     <div class="row">
-                        <div class="col-sm">
+                        <div class="col-lg">
                             <input type="text" name="name" placeholder="Name" required>
                         </div>
-                        <div class="col-sm">
+                        <div class="col-lg">
                             <input type="email" name="_replyto" placeholder="Email" required>
                         </div>
                     </div>
@@ -147,6 +150,8 @@
     </div>
     <!-- contact ends -->
 
+    <br/>
+    <br/>
     <!-- footer -->
     <!-- footer ends -->
 </body>
