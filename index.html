@@ -1,46 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Varun Singhal</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <style>           
-            html {
-                font-size: 0.8em;
-            }
-        </style>
-    </head>
-    
-    <body>
-        <!-- menu -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">VARUN SINGHAL</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<head>
+    <title>Varun Singhal</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-size: 0.8em;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        input,
+        textarea {
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            color: #000000;
+            margin: 0 0 5px;
+            width: 100%;
+            -webkit-transition: 0.5s ease all;
+            transition: 0.5s ease all;
+            background-color: transparent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            font: normal normal normal 15px/1.875em avenir-lt-w01_35-light1475496, sans-serif;
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">VARUN SINGHAL</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quote">Quote</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- menu ends -->
+
+
+
+    <!-- flex -->
+    <!-- flex ends -->
+    <br/>
+    <br/>
+    <!-- quote -->
+    <div class="container" id="quote">
+        <blockquote class="blockquote">
+            <p class="mb-0">What would life be if we had no courage to attempt anything?</p>
+            <footer class="blockquote-footer">Vincent Van Gogh
+                <cite title="Source Title">&ensp;</cite>
+            </footer>
+        </blockquote>
+    </div>
+
+    <!-- quote ends -->
+    <br/>
+    <br/>
+
+    <!-- contact me -->
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-sm">
+                <h4>GET IN TOUCH</h4>
+
+                <p>Montreal, QC, Canada</p>
+                <p>varunsinghal15@gmail.com</p>
+                <p>123-456-7890</p>
             </div>
-        </nav>
-        <!-- menu ends -->
-        
-        <!-- flex -->
-        <!-- flex ends -->
-        
-        <!-- quote -->
-        <!-- quote ends -->
-        
-        <!-- contact me -->
-        <!-- contact ends -->
-        
-        <!-- footer -->
-        <!-- footer ends -->
-    </body>
+            <div class="col-sm">
+                <form action="https://formspree.io/varunsinghal15@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-sm">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="col-sm">
+                            <input type="email" name="_replyto" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea type="text" name="message" placeholder="Message" required>
+                                </textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- contact ends -->
+
+    <!-- footer -->
+    <!-- footer ends -->
+</body>
+
 </html>
