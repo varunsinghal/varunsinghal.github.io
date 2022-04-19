@@ -1,163 +1,253 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Varun Singhal</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <meta name="author" content="Varun Singhal">
+ 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Sanchez&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        input,
-        textarea {
-            padding: 5px;
-            border: none;
-            border-bottom: 1px solid rgba(0, 0, 0, 1);
-            color: #000000;
-            margin: 0 0 5px;
-            width: 100%;
-            -webkit-transition: 0.5s ease all;
-            transition: 0.5s ease all;
-            background-color: transparent;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            font: normal normal normal 15px/1.875em avenir-lt-w01_35-light1475496, sans-serif;
-            -webkit-appearance: none;
-            border-radius: 0;
-        }
-
-        textarea:focus,
-        input:focus {
-            outline: none;
-        }
+      div.code {
+        white-space: pre;
+      }
+      html {
+        font-size:0.8em;
+      }
+      #header {
+          background-color: #263547;
+          color: #f8f8f8;
+      }
+      #header-name {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3em;
+        letter-spacing: 0.08em;
+        tab-size: 4;
+        font-weight: 500;
+      }
+      #header-designation {
+        font-family: 'Sanchez', serif;
+        font-size: 1.3em;
+      }
+      #header-info {
+        font-family: 'Sanchez', serif;
+        font-size: 1.1em;
+      }
+      #header-info a {
+        color: #f8f8f8;
+      }
+      .left-side {
+          background-color: #b9eeeb;
+      }
+      .section-header {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        font-size: 1.1em;
+      }
+      .section-subheader {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+      }
+      .section-text, li {
+        font-family: 'Sanchez', serif;
+        /* text-align: justify; */
+      }
+      
     </style>
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-                console.log(this.hash);
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
-</head>
-
-<body>
-    <!-- menu -->
-    <nav class="navbar navbar-light bg-light">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">VARUN SINGHAL</a>
-
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#quote">Quote</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- menu ends -->
-
-
-    <br/>
-    <br/>
-    <!-- flex -->
-    <div id="home">
-
-    </div>
-    <!-- flex ends -->
-
-    <br/>
-    <br/>
-    <!-- quote -->
-    <div class="container" id="quote">
-        <blockquote class="blockquote">
-            <p class="mb-0">What would life be if we had no courage to attempt anything?</p>
-            <footer class="blockquote-footer">Vincent Van Gogh
-                <cite title="Source Title">&ensp;</cite>
-            </footer>
-        </blockquote>
-    </div>
-
-    <!-- quote ends -->
-
-    <br/>
-    <br/>
-    <!-- contact me -->
-    <div class="container" id="contact">
+    <title>Varun Singhal</title>
+  </head>
+  <body>
+    <!-- <br> -->
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h4>GET IN TOUCH</h4>
-
-                <p>Montreal, QC, Canada</p>
-                <p>varunsinghal15@gmail.com</p>
-                <p>123-456-7890</p>
+            <div class="col-md-2 col-12">
             </div>
-            <div class="col">
-                <form action="https://formspree.io/varunsinghal15@gmail.com" method="POST">
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" name="name" placeholder="Name" required>
-                        </div>
-                        <div class="col">
-                            <input type="email" name="_replyto" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea type="text" name="message" placeholder="Message" required>
-                                </textarea>
-                    <input type="submit" value="Send">
-                </form>
+            <div class="col-md-8 col-12" id="header">
+                <br><br>
+                <p class="text-center" id="header-name" >VARUN SINGHAL</p>
+                <p class="text-center mb-1" id="header-designation">Senior Software Engineer</p>
+                <p class="text-center" id="header-info">
+                    <a href="mailto:varunsinghal15@gmail.com" class="text-decoration-none">varunsinghal15@gmail.com</a>&ensp;&ensp;|&ensp;&ensp;
+                    <a href="https://linkedin.com/in/varunsinghal15" class="text-decoration-none">linkedin.com/in/varunsinghal15</a>&ensp;&ensp;|&ensp;&ensp;
+                    <a href="https://github.com/varunsinghal" class="text-decoration-none">github.com/varunsinghal</a>
+                </p>
+                <br>
+            </div>
+            <div class="col-md-2 col-12">
             </div>
         </div>
     </div>
-    <!-- contact ends -->
+    <br><br>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-12 p-5 left-side">
+                <p class="section-header">MORE ABOUT ME</p>
+                <p class="section-text">
+                    Throughout my 7 years of career as a software developer, I have focussed to deliver quality software with clean and well-designed code.
+                </p>
+                <br><br>
+                <p class="section-header">EDUCATION HISTORY</p>
+                <p class="section-subheader">Delhi Technological University</p>
+                <p class="section-text">
+                  Bacherlor of Technology, 2015<br>
+                  Electronics & Communication Engineering
+                  <ul>
+                    <li>Member of the DWD team - developed and maintained Hostel Management System</li>
+                    <li>Webhead of the Aurora (technical fest) - developed the Enigma Quiz portal. </li>
+                  </ul>
+                </p>
+                <br><br>
+                <p class="section-header">CERTIFICATIONS</p>
+                <p class="section-text">
+                  - Azure data fundamentals | CN: H837-9778<br>
+                  - Neo4j certified professional | CN: 17163720<br>
+                  - SnowPro core certification | CN: 9951970<br>
+                  - Design patterns by Coursera | CN: TUPF554UTM3P<br>
+                  - Data structures & algorithms by Udemy<br>
+                </p>
+                <br><br>
+                <p class="section-header">SKILLS AND ABILITIES</p>
+                <p class="section-text">
+                  Python - flask, pandas, pytest, SQLAlchemy, click, boto3, marshmallow, factory-boy, python-pptx, spacy, nltk, matplotlib, re (regular expression).
+                  <br>
+                  Python linting - flake8, black, isort, pytest-cov
+                  <br>
+                  Python hosting - gunicorn, nginx
+                  <br>
+                  <br>
+                  AWS - EC2, IAM, S3, SQS, SNS, SES, Lex
+                  <br>
+                  AWS Serverless - AWS Lambda, API Gateway, S3 Select,  Serverless Application Model
+                  <br>
+                  <br>
+                  Database - MySQL, PostgreSQL, Snowflake, Redshift
+                  <br>
+                  Serverless Database - dynamo DB, MongoDB, Athena
+                  <br>
+                  <br>
+                  Java - Spring boot, Spring data.
+                  <br>
+                  <br>
+                  GIT - submodules, Github-actions, branch management, tags, and release (patch, minor, major) versioning
+                  <br>
+                  <br>
+                  agile framework., software dependency management (SOLID principles), clean architecture, design patterns., ETL tools like Talend, Alteryx.
+                </p>
+                <br><br>
+                <p class="section-header">AWARDS & RECOGNITION</p>
+                <p class="section-text">
+                  - BRAVO award for lasting impact and contribution towards the team | Dec. 2016 <br>
+                  - Axtria Institute Certified Trainer | Oct. 2016 <br>
+                  - Awarded Axtria Process Champion | Jul. 2016 <br>
+                  - First position in building social networking site at technical fest - AEON | Feb. 2013
+                </p>
+            </div>
+            <div class="col-md-4 col-12 p-5 right-side">
+                <p class="section-header">PROJECTS</p>
+                <p class="section-subheader">Data pipeline</p>
+                <p class="section-text">
+                  BCG | Jun. 2020 - Nov. 2021
+                  <ul>
+                    <li>Contributed to build configurable services for data movement, data protection, and data transformation for various customers.</li>
+                    <li>Data transformation workflow builder - to migrate the raw formats to acceptable common data model.</li>
+                    <li>Data protection techniques - anonymization with format preserving and hierarchy options.</li>
+                    <li>Data movement services across the platforms like S3, Snowflake, SQL server and file system.</li>
+                    <li>Technology: Python, SQL Server, Snowflake.</li>
+                  </ul>
+                </p>
+                <br>
+                <p class="section-subheader">Business Rule Management System</p>
+                <p class="section-text">
+                  Axtria | Jul. 2018 - May. 2020
+                  <ul>
+                    <li>Developed domain-specific language using context-free Grammar to create business rules.</li>
+                    <li>Technology: Python, Lark, JSON, Redshift</li>
+                  </ul>
+                </p>
+                <br>
+                <p class="section-subheader">API Exchange</p>
+                <p class="section-text">
+                  Axtria | Aug. 2019 - May. 2020
+                  <ul>
+                    <li>Designed and developed a product for in-house team to create APIs on the fly by writing parameterized SQL queries.</li>
+                    <li>Intelligently parse the query and associate them with HTTP request object.</li>
+                    <li>Technology: Python, SqlAlchemy, JSON, Redshift, SQL server, MySQL.</li>
+                  </ul>
+                </p>
+                <br>
+                <p class="section-subheader">Virtual Analyst</p>
+                <p class="section-text">
+                  Axtria | Aug. 2017 - Jan. 2020
+                  <ul>
+                    <li>Intelligent query generation that allows anyone to search across complex schemas using natural language.</li>
+                    <li>Technology: Python, Pandas, Plotly, nltk</li>
+                  </ul>
+                </p>
+                <br>
+                <p class="section-subheader">SalesIQ<sup>TM</sup></p>
+                <p class="section-text">
+                  Axtria | Jun. 2016 - Jul. 2018
+                  <ul>
+                    <li>Developed REST API-based data migration module with real-time configuration management through Salesforce and business validations.</li>
+                    <li>Technology: Python, Flask, Pandas, Salesforce, PostgreSQL</li>
+                  </ul>
+                </p>
+                <br>
+                <p class="section-subheader">A/B Testing</p>
+                <p class="section-text">
+                  Axtria | Sep. 2015 - Mar. 2016
+                  <ul>
+                    <li>Designed and developed a framework to create different versions of A/B testing and continuously discover the best performing version.</li>
+                    <li>Technology: Python</li>
+                  </ul>
+                </p>
+                <br>
+                <p class="section-subheader">Powerpoint automation</p>
+                <p class="section-text">
+                  Independent | Aug. 2021 - Present
+                  <ul>
+                    <li>AWS cloud-based product to receive the configuration for various elements and publish Powerpoint presentations for multiple datasets in a single click.</li>
+                    <li>Technology: Python, python-pptx, AWS S3.</li>
+                  </ul>
+                </p>
+            </div> 
+        </div>
+    </div>
 
-    <br/>
-    <br/>
-    <!-- footer -->
-    <!-- footer ends -->
-</body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-4"></div>
+        <div class="col-lg-2 col-4 p-5">
+        </div>
+        <div class="col-lg-5 col-4 p-5">
+          <p class="text-end">
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid fixed-bottom">
+      <footer class="footer">
+          <div class="row">
+              <div class="col-lg-9 col-12">
+              </div>
+              <div class="col-lg-3 col-12 text-end bg-white">
+                  <small><p>Copyrights &copy; 2019. All rights reserved.</p></small>
+              </div>
+          </div>
+      </footer>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
