@@ -1,334 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Varun Singhal" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Varun Singhal">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      div.code {
+        white-space: pre;
+      }
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Sanchez&display=swap"
-    rel="stylesheet">
-  <style>
-    div.code {
-      white-space: pre;
-    }
+      html {
+        font-size: 0.9em;
+      }
 
-    html {
-      font-size: 0.8em;
-    }
+      .profile-header {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.5em;
+      }
 
-    #header {
-      background-color: #263547;
-      color: #f8f8f8;
-    }
+      .profile-name {
+        font-family: "Sanchez", serif;
+        font-size: 1.6em;
+        color: teal;
+      }
 
-    #header-name {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 3em;
-      letter-spacing: 0.08em;
-      tab-size: 4;
-      font-weight: 500;
-    }
+      .profile-text {
+        font-family: "Sanchez", serif;
+        font-size: 1.5em;
+      }
 
-    #header-designation {
-      font-family: 'Sanchez', serif;
-      font-size: 1.3em;
-    }
+      .profile-text2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.4em;
+      }
 
-    #header-info {
-      font-family: 'Sanchez', serif;
-      font-size: 1.1em;
-    }
+      .profile-text2 a {
+        color: black;
+      }
 
-    #header-info a {
-      color: #f8f8f8;
-    }
+      .highlight-side {
+        background-color: #b9eeeb;
+      }
 
-    .highlight-side {
-      background-color: #b9eeeb;
-    }
+      .project-header {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 1.8em;
+      }
 
-    .section-header {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bolder;
-      font-size: 1.1em;
-    }
+      .project-subheader {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+      }
 
-    .section-subheader {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1em;
-      font-weight: bold;
-    }
-
-    .section-text,
-    li {
-      font-family: 'Sanchez', serif;
-      /* text-align: justify; */
-    }
-  </style>
-  <title>Varun Singhal</title>
-</head>
-
-<body>
-  <!-- <br> -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2 col-12">
-      </div>
-      <div class="col-lg-8 col-12" id="header">
-        <br><br>
-        <p class="text-center" id="header-name">VARUN SINGHAL</p>
-        <p class="text-center mb-1" id="header-designation">Senior Software Engineer</p>
-        <p class="text-center" id="header-info">
-          <a href="mailto:varunsinghal15@gmail.com"
-            class="text-decoration-none">varunsinghal15@gmail.com</a>&ensp;&ensp;|&ensp;&ensp;
-          <a href="https://linkedin.com/in/varunsinghal15"
-            class="text-decoration-none">linkedin.com/in/varunsinghal15</a>&ensp;&ensp;|&ensp;&ensp;
-          <a href="https://github.com/varunsinghal" class="text-decoration-none">github.com/varunsinghal</a>&ensp;&ensp;|&ensp;&ensp;
-          <span class="text-decoration-none">Gurugram, India</span>
-        </p>
-        <br>
-      </div>
-      <div class="col-lg-2 col-12">
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6 col-10 p-5">
-        <p class="section-header">PROJECTS</p>
-        <p class="section-subheader">Case management tool</p>
-        <p class="section-text">
-          Granicus | Nov. 2021 - Present
-        <ul>
-          <li>Broad mix of experience in developing, maintaining, and deploying microservices while implementing new
-            features for the product.</li>
-          <li>Case management tool: Designed and implemented a new data model for a system, resulting in a 
-            50% reduction in both data and index size and significant improvements in query performance.</li>
-          <li>Developed feature flag framework and migration script to ensure a non- breaking transition to the new data model.</li>
-          <li>Technology: Python, Docker, Angular, Terraform, Flask, SQLAlchemy, pytest, Serverless Framework.</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">Data pipeline</p>
-        <p class="section-text">
-          BCG | Jun. 2020 - Nov. 2021
-        <ul>
-          <li>Developed complex and scalable workflows that were resilient, maintainable, and easy to monitor.</li>
-          <li>Had end-to-end ownership of delivering, deploying, and managing API services.</li>
-          <li>Designed and implemented essential core libraries/services that could be reused by all other microservices
-            (e.g. authentication, observability instruments, storage abstractions, feature flag, resource locks, etc.).
-          </li>
-          <li>Contributed to building configurable workflows for data movement, data protection, and data transformation
-            for various customers.</li>
-          <li>Implemented data protection techniques to anonymize data with format-preserving and hierarchy options.
-          </li>
-          <li>Technology: Python, pytest, Docker, Flask, Snowflake, SQL Server.</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">API Exchange</p>
-        <p class="section-text">
-          Axtria | Aug. 2019 - May. 2020
-        <ul>
-          <li>Designed and developed the in-house product to create APIs on the fly by writing parameterized SQL
-            queries.</li>
-          <li>The backend engine was responsible for intelligently parsing the query and associating them with the HTTP
-            request object.</li>
-          <li>Technology: Python, SqlAlchemy, JSON, Redshift, SQL server, MySQL.</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">Business Rule Management System</p>
-        <p class="section-text">
-          Axtria | Feb. 2019 - May. 2020
-        <ul>
-          <li>Developed a data handling framework to orchestrate the components in the data lifecycle.</li>
-          <li>Designed and developed a rule engine to translate the domain-specific language to SQL queries.</li>
-          <li>During designing, worked with Product Managers to convert user stories to features and tasks.</li>
-          <li>Had end-to-end ownership of the development and deployment to production servers.</li>
-          <li>Developed Flask APIs with best coding practices to consume, manage and orchestrate the business rules.
-          </li>
-          <li>Technology: Python, Flask, Lark, JSON, Redshift, Snowflake.</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">Newspaper Search</p>
-        <p class="section-text">
-          Axtria | Jan. 2019 - Jul. 2019
-        <ul>
-          <li>Solution to publish automated newsletters for a given time period.</li>
-          <li>
-            Built using Google's custom search engine API and keyword extraction for the
-            identification of relevant articles over the web.
-          </li>
-          <li>Technology: Python, BeautifulSoup4, threading, nltk</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">Virtual Analyst</p>
-        <p class="section-text">
-          Axtria | Aug. 2018 - Jan. 2020
-        <ul>
-          <li>Intelligent query generation that allows anyone to search across complex schemas using natural language.
-          </li>
-          <li>Technology: Python, Pandas, Plotly, nltk</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">SalesIQ<sup>TM</sup></p>
-        <p class="section-text">
-          Axtria | Jun. 2016 - Jul. 2018
-        <ul>
-          <li>Developed REST API-based data migration module with real-time configuration management through Salesforce.
-          </li>
-          <li>Designed reusable and metadata-driven components for data ingestion, transformation, and delivery.</li>
-          <li>Technology: Python, Flask, Pandas, Salesforce, PostgreSQL</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">A/B Testing</p>
-        <p class="section-text">
-          Axtria | Sep. 2015 - Mar. 2016
-        <ul>
-          <li>Developed an automated test-control matching tool with the frontend of Excel and backend of Python.</li>
-          <li>Technology: Python</li>
-        </ul>
-        </p>
-        <br>
-        <p class="section-subheader">Powerpoint automation</p>
-        <p class="section-text">
-          Independent | Aug. 2021 - Present
-        <ul>
-          <li>AWS cloud-based product to receive the configuration for various elements and publish Powerpoint
-            presentations for
-            multiple datasets in a single click.</li>
-          <li>Technology: Python, python-pptx, AWS S3, Redis, RabbitMQ, flask.</li>
-        </ul>
-        </p>
-      </div>
-      <div class="col-lg-3 col-md-5 col-10">
-        <div class="highlight-side p-5">
-          <p class="section-header">MORE ABOUT ME</p>
-          <p class="section-text">
-            Throughout my 7 years of career as a software developer,
-            I have focussed to deliver quality software with clean and well-designed code.
-          </p>
-          <br><br>
-          <p class="section-header">EDUCATION HISTORY</p>
-          <p class="section-subheader">Delhi Technological University</p>
-          <p class="section-text">
-            Bacherlor of Technology, 2015<br>
-            Electronics & Communication Engineering
-          <ul>
-            <li>Member of the DWD team - developed and maintained Hostel Management System</li>
-            <li>Webhead of the Aurora (technical fest) - developed the Enigma Quiz portal. </li>
-          </ul>
-          </p>
-          <br><br>
-          <p class="section-header">CERTIFICATIONS</p>
-          <p class="section-text">
-            - Azure data fundamentals | CN: H837-9778<br>
-            - Neo4j certified professional | CN: 17163720<br>
-            - SnowPro core certification | CN: 9951970<br>
-            - Design patterns by Coursera | CN: TUPF554UTM3P<br>
-            - Data structures & algorithms by Udemy<br>
-          </p>
-          <br><br>
-          <p class="section-header">SKILLS AND ABILITIES</p>
-          <p class="section-text">
-            Python - flask, pandas, pytest, SQLAlchemy, Alembic, click, boto3, marshmallow, factory-boy, python-pptx, spacy,
-            nltk,
-            matplotlib, re (regular expression).
-            <br>
-            Python linting - flake8, black, isort, pytest-cov
-            <br>
-            Python hosting - gunicorn, nginx
-            <br>
-            <br>
-            UI - Angular, HTML, CSS, jQuery, TypeScript
-            <br>
-            <br>
-            Docker, Terraform, Makefile and bash scripting.
-            <br>
-            RabbitMQ, Redis.
-            <br>
-            <br>
-            AWS - EC2, IAM, S3, SQS, SNS, SES, Lex
-            <br>
-            AWS Serverless - AWS Lambda, API Gateway, S3 Select, Serverless Application Model
-            <br>
-            <br>
-            Database - MySQL, PostgreSQL, Snowflake, Redshift
-            <br>
-            Serverless Database - dynamo DB, MongoDB, Athena
-            <br>
-            <br>
-            Java - Spring boot, Spring data, Spring REST API.
-            <br>
-            <br>
-            GIT - submodules, Github-actions, branch management, tags, and release (patch, minor, major) versioning.
-            <br>
-            <br>
-            agile methodologies, software dependency management (SOLID principles), clean architecture, design patterns.
-            <br>
-            <br>
-            ETL tools like Talend, Alteryx.
-          </p>
-          <br><br>
-          <p class="section-header">AWARDS & RECOGNITION</p>
-          <p class="section-text">
-            - Innovation award for idea generation | Dec. 2022 <br>
-            - BRAVO award (x2) | Nov. 2019 <br>
-            - BRAVO award for lasting impact and contribution towards the team | Dec. 2016 <br>
-            - Axtria Institute Certified Trainer | Oct. 2016 <br>
-            - Awarded Axtria Process Champion | Jul. 2016 <br>
-            - First position in building social networking site at technical fest - AEON | Feb. 2013
-          </p>
-        </div><!-- .highlight-side -->
-
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="container-fluid fixed-bottom">
-    <footer class="footer">
-      <div class="row justify-content-end">
-        <div class="col-lg-2 col-12 text-end bg-white pt-3">
-          <small>
-            <p>Copyrights &copy; 2019. All rights reserved.</p>
-          </small>
+      .project-text,
+      li {
+        font-family: "Sanchez", serif;
+        text-align: justify;
+        font-size: 1.3em;
+      }
+    </style>
+    <title>Varun Singhal</title>
+  </head>
+  <body>
+    <br /><br /><br /><br />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-1"></div>
+        <div class="col-sm-12 col-lg-5">
+          <span class="profile-header">Hi, there.</span>
+          <br /><br />
+          <span class="profile-name">My name is Varun Singhal.</span>
+          <br />
+          <span class="profile-text">
+            I deliver quality software with clean and well design code.
+          </span>
+          <br />
+          <p class="profile-text">This is what I've been working on.</p>
         </div>
+        <div class="col-sm-12 col-lg-6"></div>
       </div>
-    </footer>
-  </div>
+    </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <br /><br /><br /><br />
+    <div class="container-fluid">
+      <!-- row starts -->
+      <div class="row">
+        <div class="col-sm-12 col-lg-1"></div>
+        <div class="col-sm-12 col-lg-5 text-end">
+          <div class="ratio ratio-4x3">
+            <video constrols autoplay muted loop class="border rounded">
+              <source src="data/ask analyst.mov" type="video/mp4" />
+            </video>
+          </div>
+        </div>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EFEHD87DG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+        <div class="col-sm-12 col-lg-5">
+          <p class="project-header">Ask Analyst</p>
+          <p class="project-subheader">Python (with nltk) + Flask</p>
+          <p class="project-text">
+            <br />
+            Ask analyst is an innovative product that empowers business users to
+            retrieve data in visually appealing formats just using English text.
+            With a user-friendly interface, the product eliminates the necessity
+            for technical expertise.
+            <br /><br />
+            By simply entering your question in English, the advanced engine
+            intelligently auto-corrects and translates it into a precise SQL
+            query. It executes the query seamlessly, and within moments,
+            retrieves the desired data. Users can explore and analyze data
+            through well-structured tables or visually captivating charts,
+            uncovering valuable insights.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-1"></div>
+      </div>
+      <!-- .row ends -->
+      <br /><br /><br /><br />
+      <!-- row starts -->
+      <div class="row">
+        <div class="col-sm-12 col-lg-1"></div>
+        <div class="col-sm-12 col-lg-5 text-end">
+          <p class="project-header">API Exchange</p>
+          <p class="project-subheader">Python + Flask</p>
+          <p class="project-text">
+            <br />
+            API Exchange empowers developers to leverage their SQL knowledge to
+            rapidly build robust APIs without the need for extensive coding.
+            <br /><br />
+            It offers a low-code approach, that allows developers to focus on
+            crafting efficient and performant SQL queries while our platform
+            handles API creation, security, and data integration. This equips
+            businesses to unlock the value of their data assets and deliver
+            powerful, data-driven applications and services to their users.
+            <br />
+            Fun fact: API Exchange portal itself uses APIs that are built on API
+            Exchange, showcasing the true power and versatility of the solution.
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-5">
+          <div class="ratio ratio-4x3 border rounded">
+            <div class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img
+                    src="data/api exchange 1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="data/api exchange 2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="data/api exchange 3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="data/api exchange 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="data/api exchange 5.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .carousel -->
+        </div>
+        <div class="col-sm-12 col-lg-1"></div>
+      </div>
+      <!-- .row ends -->
+    </div>
+    <br /><br /><br /><br /><br />
+    <br /><br /><br />
 
-    gtag('config', 'G-1EFEHD87DG');
-  </script>
-</body>
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-1"></div>
+        <div class="col-sm-12 col-lg-7">
+          <p class="profile-header">let's talk.</p>
+          <br/><br/>
+          <p class="profile-text2">
+            <a
+              href="https://linkedin.com/in/varunsinghal15"
+              class="text-decoration-none"
+              >linkedin</a
+            >&ensp;&ensp;&ensp;&ensp;
+            <a
+              href="https://github.com/varunsinghal"
+              class="text-decoration-none"
+              >github</a
+            >&ensp;&ensp;&ensp;&ensp;
+            <a
+              href="mailto:varunsinghal15@gmail.com"
+              class="text-decoration-none"
+              >varunsinghal15@gmail.com</a
+            >&ensp;&ensp;&ensp;&ensp;
+            <a
+              href="projects.html"
+              class="text-decoration-none"
+              >more projects <i class="bi bi-arrow-right"></i></a
+            >&ensp;&ensp;&ensp;&ensp;
+          </p>
+        </div>
+        <div class="col-sm-12 col-lg-4"></div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <br /><br /><br />
+  </body>
 </html>
